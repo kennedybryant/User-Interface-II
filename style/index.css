@@ -1,1 +1,105 @@
 /* Add CSS styling here */
+* {
+    
+    
+}
+body {
+    margin: 0;
+}
+header {
+    background-color: lightgrey;
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+nav {
+    margin-left: 15px;
+    margin-top: -15px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+    height:30px;
+ }
+
+ nav a {
+     text-decoration: none;
+     background-color: white;
+     color: black;
+     border: 1px solid black;;
+     padding: 10px;
+ }
+
+.main {
+     width: 60%;
+     margin: 10px auto; 
+ }
+
+.top {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.profile {
+    
+}
+
+.intro {
+    width: 40%;
+    margin-right: 5px;
+}
+
+ .preview {
+     display: flex;
+     justify-content: space-around;
+     align-content: space-evenly;
+     flex-wrap: wrap;
+ }
+
+ .item {
+    height: 180px;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+ }
+
+ .title {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 5px;
+ }
+
+footer {
+    background-color: lightgrey;
+    width: 100vw;
+    height: 125px;
+    padding: 5px;
+    text-align: center;
+}
+
+.links {
+    margin-top:10px;
+}
+.links  a{
+    text-decoration: none;
+    color: black;
+}
+
+
