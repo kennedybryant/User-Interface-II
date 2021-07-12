@@ -46,12 +46,13 @@ table {
 
 /* Add CSS styling here */
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 html {
     font-size: 62.5%;
 }
 body {
+    width: 100vw;
     margin: 0;
     font-size: 1.6rem;;
 }
@@ -96,7 +97,7 @@ nav a {
 }
 
 .top {
-    width: 80%;
+    width: 90%;
     padding-left: 2.5%;
     display: flex;
     flex-flow: row nowrap;
@@ -104,16 +105,8 @@ nav a {
     align-items: flex-end;
 }
 
-.profile {
-    background-image: url('https://picsum.photos/300/200');
-    background-repeat: no-repeat;
-    background-position: cover;
-    height: 200px;
-}
-
 .intro {
     width: 50%;
-    height: 180px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -241,17 +234,18 @@ footer button {
         padding-left: 0;
         display: flex;
         flex-flow: column nowrap;
-        border: 1px solid red;
-    }
-
-    .profile {
-        margin:0;
-        border: 1px solid green;
+        align-items: center;
     }
 
     .intro {
-        width: 90%;
-        /* text-align: center; */
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .intro p {
+        text-align: center;
     }
 
 }
