@@ -46,7 +46,7 @@ table {
 
 /* Add CSS styling here */
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 html {
     font-size: 62.5%;
@@ -55,6 +55,8 @@ body {
     margin: 0;
     font-size: 1.6rem;;
 }
+
+/*Header Styles*/
 header {
     background-color: lightgrey;
     width: 100vw;
@@ -78,7 +80,7 @@ nav {
  }
 
 nav a {
-     width: 5%;
+     
      text-decoration: none;
      text-align: center;
      background-color: white;
@@ -87,6 +89,7 @@ nav a {
      padding: 10px;
  }
 
+ /*Main Styles*/
 .main {
     width: 60%;
     margin: 10px auto; 
@@ -147,6 +150,7 @@ h2 {
     padding-top: 5px;
  }
 
+/*Footer Styles*/
 footer {
     background-color: lightgrey;
     width: 100vw;
@@ -177,10 +181,77 @@ footer button {
 /*Media Queries*/
 /*Media Queries for Max-Width 800px*/
 @media(max-width: 800px) {
+   .main {
+    width: 80%;
+    margin-top: 5%;
+   }
 
+   .top {
+       width: 90%;
+       display: flex;
+       flex-flow: row nowrap;
+       justify-content: space-between;
+   }
+
+   .intro {
+       width: 40%;
+       height: 200px;
+   }
+
+   .preview {  
+       width: 100%;
+       margin-top: 5%;
+   }
 } 
 
 /*Media Queries for Max-Width 500px*/
 @media(max-width: 500px) {
+    .main {
+        width: 90%;
+    }
+
+    header {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+
+    h1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        height: 55%;
+        margin-left: 0;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    nav a {
+        width: 30%;
+    }
+
+    .top {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        border: 1px solid red;
+    }
+
+    .profile {
+        margin:0;
+        border: 1px solid green;
+    }
+
+    .intro {
+        width: 90%;
+        /* text-align: center; */
+    }
 
 }
